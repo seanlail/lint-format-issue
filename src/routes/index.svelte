@@ -1,2 +1,19 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import ComponentA from '$component/ComponentA.svelte';
+	import ComponentB from '$component/ComponentB.svelte';
+	import { exampleStore } from '$component/stores';
+	import { onMount } from 'svelte';
+	import RelativeA from './_RelativeA.svelte';
+	import RelativeB from './_RelativeB.svelte';
+
+	onMount(() => {
+		// do nothing
+	});
+</script>
+
+{$exampleStore ? 'test' : 'test'}
+
+<ComponentA />
+<ComponentB />
+<RelativeA />
+<RelativeB />
