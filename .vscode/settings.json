@@ -1,9 +1,7 @@
 {
-	"editor.codeActionsOnSave": {
-		"source.organizeImports.eslint": true,
-		"source.fixAll.eslint": true
-	},
+	"editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll.eslint"],
 	"editor.formatOnSave": true,
+	"eslint.validate": ["javascript", "typescript", "svelte"],
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
@@ -21,10 +19,6 @@
 	"svelte.plugin.svelte.format.enable": true,
 	"svelte.plugin.typescript.rename.enable": false,
 	"[svelte]": {
-		"editor.codeActionsOnSave": {
-			"source.organizeImports": true,
-			"source.fixAll": true
-		},
 		"editor.defaultFormatter": "svelte.svelte-vscode",
 		"editor.formatOnSave": true
 	}
