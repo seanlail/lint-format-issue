@@ -19,6 +19,7 @@
 	"svelte.plugin.svelte.format.enable": true,
 	"svelte.plugin.typescript.rename.enable": false,
 	"[svelte]": {
+		"editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll.eslint"],
 		"editor.defaultFormatter": "svelte.svelte-vscode",
 		"editor.formatOnSave": true
 	}
